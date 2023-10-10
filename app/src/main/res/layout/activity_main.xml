@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tv_consult"
+        android:id="@+id/tv_tabuadaTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/consultar_tabuada"
@@ -27,7 +27,7 @@
         android:layout_alignParentEnd="true"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/tv_consult"
+        app:layout_constraintStart_toEndOf="@id/tv_tabuadaTitle"
         android:padding="16dp"
         android:layout_marginTop="10dp"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
@@ -42,7 +42,7 @@
         android:textStyle="bold"
         android:padding="16dp"
         android:layout_marginTop="30dp"
-        app:layout_constraintTop_toBottomOf="@id/tv_consult"
+        app:layout_constraintTop_toBottomOf="@id/tv_tabuadaTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -52,10 +52,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
+        android:maxLength="2"
+        android:hint="00"
         android:textSize="18sp"
         android:padding="16dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="50dp"
         app:layout_constraintEnd_toEndOf="@id/btn_DarkMode"
         app:layout_constraintStart_toStartOf="@id/btn_DarkMode"
         app:layout_constraintTop_toBottomOf="@id/btn_DarkMode" />
@@ -80,15 +81,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
+        android:maxLength="2"
+        android:hint="00"
         android:textSize="18sp"
         android:padding="16dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="0dp"
         app:layout_constraintEnd_toEndOf="@id/et_first_entry"
         app:layout_constraintStart_toStartOf="@id/et_first_entry"
         app:layout_constraintTop_toBottomOf="@id/et_first_entry"/>
 
-    <!-- Botao calcular -->
+    <!-- Botao calcular consulta -->
     <Button
         android:id="@+id/btn_calc"
         android:layout_width="wrap_content"
@@ -96,11 +98,26 @@
         android:text="@string/calcular"
         android:textSize="30sp"
         android:textColor="@color/white"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
         app:layout_constraintTop_toBottomOf="@id/tv_second_entry"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_clean"
         />
+
+    <!-- Botao limpar consulta -->
+    <Button
+        android:id="@+id/btn_clean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/limpar"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        app:layout_goneMarginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_second_entry"
+        app:layout_constraintStart_toEndOf="@id/btn_calc"
+        app:layout_constraintEnd_toEndOf="parent"
+         />
 
     <!-- Informa ao usuario a resposta-->
     <TextView
@@ -108,10 +125,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/result"
-        android:textSize="17sp"
+        android:textAlignment="center"
+        android:textSize="20sp"
         android:textStyle="bold"
-        android:padding="16dp"
-        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:layout_marginTop="1dp"
         app:layout_constraintTop_toBottomOf="@id/btn_calc"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -121,13 +139,12 @@
         android:id="@+id/tv_result_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="00"
-        android:textSize="18sp"
-        android:padding="16dp"
-        android:layout_marginTop="50dp"
-        app:layout_constraintTop_toBottomOf="@id/btn_calc"
-        app:layout_constraintStart_toStartOf="@id/et_second_entry"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        android:hint="@string/resultado"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_result"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
