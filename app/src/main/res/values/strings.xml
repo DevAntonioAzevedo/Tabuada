@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Tabuada</string>
     <string name="consultar_tabuada">Consultar Tabuada</string>
-    <string name="first_value">Digite um valor para consultar a tabuada:</string>
-    <string name="second_value">Digite o valor limite para sua consulta:</string>
+    <string name="first_value">Digite o valor do multiplicando:</string>
+    <string name="second_value">Digite o valor do multiplicador:</string>
     <string name="result">O resultado da sua consulta é:</string>
     <string name="calcular">Calcular</string>
 </resources>
