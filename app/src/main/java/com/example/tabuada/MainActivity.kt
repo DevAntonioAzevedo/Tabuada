@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity() {
                 }
             } else {
                 // Codigo a ser executado se a condicao for Falsa
-                binding.tvResultValue.text = "Valores inválidos, digite valores maiores que zero."
+                binding.tvResultValue.text = "Valores inválidos, por favor tente novamente! "
             }
         }
     }

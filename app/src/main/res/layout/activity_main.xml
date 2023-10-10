@@ -140,6 +140,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/resultado"
+        android:padding="16dp"
         android:textSize="30sp"
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
