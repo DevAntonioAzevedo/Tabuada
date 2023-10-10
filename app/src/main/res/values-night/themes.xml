@@ -1,7 +1,30 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Tabuada" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <!-- Cores Primarias -->
+        <!-- Cor da barra de acao -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <!-- Cor da Barra de Status -->
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <!-- Cor do texto e/ou icone sobre a cor primaria -->
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Cores Secundarias -->
+        <!-- Cor geralmente usada em botoes, barras de progesso, que sejam secundarios -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <!-- Fornece uma tonalidade diferente da colorSecondary -->
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <!-- Cor dos Icones -->
+        <item name="colorOnSecondary">@color/white</item>
+    </style>
+
+    <!-- Define cor de fundo padrao -->
+    <style name="background">
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <!-- Define a cor padrao para todos os textview -->
+    <style name="textView">
+        <item name="android:textColor">@color/white</item>
     </style>
 </resources>
