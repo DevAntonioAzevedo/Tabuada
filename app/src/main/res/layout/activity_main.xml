@@ -4,15 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cv_top"
+        android:id="@+id/cv_top_bar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_margin="10dp"
         android:padding="10dp"
-        app:cardElevation="5dp"
+        app:cardElevation="10dp"
         app:cardCornerRadius="10dp"
         android:backgroundTint="@color/gray_light">
 
@@ -26,13 +27,43 @@
 
         <TextView
             android:id="@+id/tv_consult"
-            style="@style/textView"
+            style="@style/themelight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginStart="100dp"
             android:text="@string/consultar_tabuada"
             android:textSize="20sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_first_entry"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="@color/gray_light">
+
+        <TextView
+            android:id="@+id/tv_first_entry"
+            style="@style/themelight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/first_value"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/et_first_entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="325dp"
+            android:inputType="number"/>
 
     </androidx.cardview.widget.CardView>
 </androidx.appcompat.widget.LinearLayoutCompat>

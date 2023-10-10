@@ -19,12 +19,9 @@
     </style>
 
     <!-- Define cor de fundo padrao -->
-    <style name="background">
+    <style name="themeDark">
         <item name="android:background">@color/black</item>
-    </style>
-
-    <!-- Define a cor padrao para todos os textview -->
-    <style name="textView">
         <item name="android:textColor">@color/black</item>
     </style>
+
 </resources>

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Tabuada</string>
     <string name="consultar_tabuada">Consultar Tabuada</string>
+    <string name="first_value">Digite um valor para consultar a tabuada:</string>
 </resources>

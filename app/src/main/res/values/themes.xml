@@ -18,14 +18,11 @@
         <item name="colorOnSecondary">@color/black</item>
     </style>
 
-    <!-- Define cor de fundo padrao -->
-    <style name="background">
-        <item name="android:background">@color/white</item>
-    </style>
-
-    <!-- Define a cor padrao para todos os textview -->
-    <style name="textView">
+    <!-- Define cor de fundo e cor de texto padrao -->
+    <style name="themelight">
+        <item name="android:background">@color/gray_light</item>
         <item name="android:textColor">@color/black</item>
     </style>
+
     <style name="Theme.Tabuada" parent="Base.Theme.Tabuada" />
 </resources>
