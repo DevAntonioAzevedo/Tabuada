@@ -19,9 +19,11 @@ class MainActivity : AppCompatActivity() {
             // Se o botao foi acionado, o modo Dark entra em acao
             if (ischecked){
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                setTheme(R.style.themeDark)
             // Se o botao nao foi acionado, o modo Dark nao entra em acao
             } else {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                setTheme(R.style.themelight)
             }
         }
 
