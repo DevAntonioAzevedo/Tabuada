@@ -20,7 +20,7 @@
 
     <!-- Define cor de fundo padrao -->
     <style name="themeDark">
-        <item name="android:background">@color/black</item>
+        <item name="android:background">@color/gray_ligth</item>
         <item name="android:textColor">@color/black</item>
     </style>
 

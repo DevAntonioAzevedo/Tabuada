@@ -1,69 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/tv_consult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/consultar_tabuada"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/btn_DarkMode"
+        android:padding="16dp"/>
+
+    <!-- Controle Dark Mode pelo app -->
+    <Switch
+        android:id="@+id/btn_DarkMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <!-- Primeira entrada de dados -->
+    <TextView
+        android:id="@+id/tv_first_entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/first_value"
+        android:textSize="16sp"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_consult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Segunda entrada de dados -->
+    <EditText
+        android:id="@+id/et_first_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_DarkMode"
+        app:layout_constraintStart_toStartOf="@id/btn_DarkMode"
+        app:layout_constraintTop_toBottomOf="@id/btn_DarkMode" />
+
+    <TextView
+        android:id="@+id/tv_second_entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/second_value"
+        android:textSize="16sp"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_first_entry"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/et_second_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="@id/et_first_entry"
+        app:layout_constraintStart_toStartOf="@id/et_first_entry"
+        app:layout_constraintTop_toBottomOf="@id/et_first_entry"/>
+
+    <!-- Botao calcular -->
+    <Button
+        android:id="@+id/btn_calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calcular"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tv_second_entry"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+<!--
     <androidx.cardview.widget.CardView
-        android:id="@+id/cv_top_bar"
+        android:id="@+id/cv_result"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_margin="10dp"
         android:padding="10dp"
         app:cardElevation="10dp"
         app:cardCornerRadius="10dp"
-        android:backgroundTint="@color/gray_light">
-
-        <Switch
-            android:id="@+id/btn_DarkMode"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="350dp"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
+        android:backgroundTint="@color/gray_ligth">
 
         <TextView
-            android:id="@+id/tv_consult"
-            style="@style/themelight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="100dp"
-            android:text="@string/consultar_tabuada"
-            android:textSize="20sp" />
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv_first_entry"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_margin="10dp"
-        android:padding="10dp"
-        app:cardElevation="10dp"
-        app:cardCornerRadius="10dp"
-        android:backgroundTint="@color/gray_light">
-
-        <TextView
-            android:id="@+id/tv_first_entry"
+            android:id="@+id/tv_result"
             style="@style/themelight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:layout_marginStart="10dp"
-            android:text="@string/first_value"
+            android:text="@string/result"
             android:textSize="16sp"/>
 
-        <EditText
-            android:id="@+id/et_first_entry"
+        <TextView
+            android:id="@+id/tv_result_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:layout_marginStart="325dp"
-            android:inputType="number"/>
+            android:text="00"
+            android:textSize="16sp"/>
 
     </androidx.cardview.widget.CardView>
-</androidx.appcompat.widget.LinearLayoutCompat>
+    -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

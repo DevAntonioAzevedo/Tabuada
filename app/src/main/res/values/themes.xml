@@ -20,7 +20,7 @@
 
     <!-- Define cor de fundo e cor de texto padrao -->
     <style name="themelight">
-        <item name="android:background">@color/gray_light</item>
+        <item name="android:background">@color/gray_ligth</item>
         <item name="android:textColor">@color/black</item>
     </style>
 
