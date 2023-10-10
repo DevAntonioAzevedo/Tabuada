@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-07-21 12:04:29 "/>
+        <attribute name="created" value="VVNFUjtERVNLVE9QLTNOR01JTDU7MjAyMy0wNy0yMTsiMDk6NDg6MDEgIjsyNTc1"/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLTNOR01JTDU7MjAyMy0wNy0yMTsiMTI6MDQ6MjkgIjszOzI2ODE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, limite, contador, resultado" type="Integer" array="False" size=""/>
+            <assign variable="contador" expression="1"/>
+            <output expression="&quot;Digite um valor maior que zero que deseja consultar a tabuada:&quot;" newline="True"/>
+            <input variable="num"/>
+            <while expression="num&lt;=0">
+                <output expression="&quot;Digite um valor maior que zero que deseja consultar a tabuada:&quot;" newline="True"/>
+                <input variable="num"/>
+            </while>
+            <output expression="&quot;Digite um valor maior que zero para ser o limite da sua tabuada:&quot;" newline="True"/>
+            <input variable="limite"/>
+            <while expression="limite&lt;=0">
+                <output expression="&quot;Digite um valor maior que zero para ser o limite da sua tabuada:&quot;" newline="True"/>
+                <input variable="limite"/>
+            </while>
+            <while expression="contador&lt;=limite">
+                <do expression="resultado=num*contador">
+                    <assign variable="resultado" expression="num*contador"/>
+                    <output expression="&quot;Tabuada: &quot; &amp; num &amp; &quot; x &quot; &amp; contador &amp; &quot; = &quot; &amp; resultado" newline="True"/>
+                    <assign variable="contador" expression="contador+1"/>
+                </do>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
