@@ -7,4 +7,38 @@
     <string name="calcular">Calcular</string>
     <string name="limpar">Limpar</string>
     <string name="resultado">O multiplicador não pode ser 0. E o multiplicando só aceita até 10.</string>
+    <string name="help">
+
+    Neste projeto, o usuário deve fornecer duas
+    entradas:
+
+    Uma para o multiplicador e outra para o
+    multiplicando.
+
+    No entanto, para o multiplicando, é permitido
+    apenas inserir apenas uma dezena, com valores
+    de 0 (zero) a 99(noventa e nove).
+
+    Quanto ao multiplicador, o valor máximo permitido
+    é de 10 (dez).
+
+    Ao clicar no botão "Calcular", o resultado da
+    consulta será exebido abaixo no campo
+    correspondente.
+
+    Para efetuar uma nova consulta, basta clicar
+    no botão "Limpar".
+
+    .
+    .
+    .
+    .
+    .
+    .
+    .
+    .
+    .
+    .
+
+          Contato: antonio_azevedo@hotmail.com.br</string>
 </resources>

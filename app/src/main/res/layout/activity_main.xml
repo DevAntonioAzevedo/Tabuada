@@ -158,7 +158,6 @@
         android:id="@+id/tv_result_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/resultado"
         android:padding="16dp"
         android:textSize="30sp"
         android:textAlignment="center"
