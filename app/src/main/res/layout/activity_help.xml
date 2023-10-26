@@ -38,7 +38,7 @@
                 android:id="@+id/tv_help"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/help"
+                android:text="colocar o texto em formato de imagem"
                 android:textColor="@color/white"
                 style="@style/TextAppearance.AppCompat.Body2"
                 android:layout_marginTop="25dp"
