@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tabuada"
         tools:targetApi="31">
+
+        <!-- Declarado a activity main -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -21,6 +23,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Declarado a activity help -->
+        <activity
+            android:name=".HelpActivity"
+            android:exported="true">
+        </activity>
+
     </application>
 
 </manifest>

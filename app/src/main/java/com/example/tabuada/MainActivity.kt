@@ -1,11 +1,19 @@
 package com.example.tabuada
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatDelegate
 import com.example.tabuada.databinding.ActivityMainBinding
+import android.view.View
 
 class MainActivity : AppCompatActivity() {
+
+    // Metodo chamado quando o botao help eh clicado
+    fun openHelpActivity(view: View) {
+        val intent = Intent(this, HelpActivity::class.java)
+        startActivity(intent)
+    }
 
     // Variavel que inicia o modo Dark Mode
     private lateinit var binding: ActivityMainBinding
