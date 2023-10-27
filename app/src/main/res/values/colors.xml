@@ -5,6 +5,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
+    <color name="gray_light2">#ABA8A8</color>
 
     <!-- Cores para o tema escuro -->
     <color name="black">#FF000000</color>
