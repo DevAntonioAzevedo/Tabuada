@@ -10,6 +10,7 @@ class HelpActivity : AppCompatActivity() {
     private lateinit var tv_help: TextView
     private lateinit var btnClose:ImageView
 
+    // Para toda funcao criada, precisa ser declarada no onCreate
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_help)
@@ -18,11 +19,12 @@ class HelpActivity : AppCompatActivity() {
 
     }
 
+    // Funcao para fechar a tela help
     fun setupView() {
         btnClose = findViewById(R.id.iv_close)
     }
 
-    // Funcao para fechar a tela help
+    // Funcao ao clicar no botao X (fechar)
     fun setupListeners() {
         btnClose.setOnClickListener {
             finish()
