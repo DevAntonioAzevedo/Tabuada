@@ -16,10 +16,8 @@ Para a construção do App foi utilizado como ambiente de desenvolvimento o Andr
 
 ## 🎨 Telas do aplicativo:
 
-
-![Imagem3](https://github.com/DevAntonioAzevedo/Tabuada/assets/135359653/4be17191-edd0-4870-be72-cd20a462cbc2)
-![Imagem2](https://github.com/DevAntonioAzevedo/Tabuada/assets/135359653/3263c3b6-b4d4-4da2-affe-6104f8a3334b)
-![Imagem1](https://github.com/DevAntonioAzevedo/Tabuada/assets/135359653/87cbce62-28e7-4acc-858b-d31271172a9d)
+![Prototipo2](https://github.com/DevAntonioAzevedo/Tabuada/assets/135359653/a0f4146f-72c0-456c-a005-c778408ce6c6)
+![Prototipo1](https://github.com/DevAntonioAzevedo/Tabuada/assets/135359653/7befe032-ffca-4747-8b80-768005f89df0)
 
 ## 📧 Contato:
 antonio_azevedo@hotmail.com.br
