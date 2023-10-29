@@ -3,7 +3,7 @@
     <style name="Base.Theme.Tabuada" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Cores Primarias -->
         <!-- Cor da barra de acao -->
-        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimary">@color/purple_500</item>
         <!-- Cor da Barra de Status -->
         <item name="colorPrimaryVariant">@color/black</item>
         <!-- Cor do texto e/ou icone sobre a cor primaria -->
